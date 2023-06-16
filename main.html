@@ -1,0 +1,156 @@
+<html>
+    <head>
+        <title>Tafecs Balancing Off</title>
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+    </head>
+    <body>
+        <style>
+            *{
+                box-sizing: border-box;
+                transition: all 0.3s ease 0s;
+            }
+            .Container1,.Container2{
+                display:flex;
+                flex-direction: row;
+                justify-content: space-between;
+                text-align: center;
+            }
+            .Item,.Item1{
+                height: 80;
+                width: 80;
+                background-color: aliceblue;
+                border-radius: 15%;  
+            }
+            .Item,.Item1{
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+        </style>
+        <div class="main">
+            <div class="Container1">
+                <div class="Item1">USD($)<p id="usd" class="currency">0</p></div>
+                <div class="Item">1 piecer <p id="1Pcr" class="para">0</p></div>
+                <div class="Item">2 piecer<p id="2Pcr" class="para">0</p></div>
+                <div class="Item">3 piecer<p id="3Pcr" class="para">0</p></div>
+                <div class="Item">4 piecer<p id="4Pcr" class="para" value = "0">0</p></div>
+                <div class="Item">Sharwama<p id="Sharwama" class="para">0</p></div>
+                <div class="Item">Small chips<p id="Schips" class="para">0</p></div>
+                <div class="Item">Large Chips<p id="Lchips" class="para">0</p></div>
+                <div class="Item">Beef Burger<p id="B/bgr" class="para">0</p></div>
+                <div class="Item">C/Burger<p id="C/bgr" class="para">0</p></div>
+            </div>
+            <div><br></div>
+            <div class="Container2">
+                <div class="Item">Bond Notes<p id="bond" class="currency">0</p></div>
+                <div class="Item">Chicken Mayaya<p id="C/Mayaya" class="para">0</p></div>
+                <div class="Item1">Bottles<p id="Bottle" class="para">0</p></div>
+                <div class="Item1">M. Maid<p id="M/maid" class="para">0</p></div>
+                <div class="Item1">Refresh<p id="Refresh" class="para">0</p></div>
+                <div class="Item1">Mirinda<p id="Mirinda" class="para">0</p></div>
+                <div class="Item1">Min Water<p id="Mwater" class="para">0</p></div>
+                <div class="Item1">1/4 Grilled<p id="1/4grill" class="para">0</p></div>
+                <div class="Item1">Plastic Bag<p id="PBag" class="para">0</p></div>
+                <div class="Item1">UBC Petty<p id="Petty" class="para">0</p></div>
+            </div>    
+        </div>
+        <div class="myCalculator">
+            <button class="btnOP" onclick="pc4Click('usd')">($)USD</button>
+            <button class="btnOP" onclick="pc4Click('bond')">Bond</button>
+        <button class="btn" onclick="pc4Click('1Pcr')">1 piecer</button>
+        <button class="btn" onclick="pc4Click('2Pcr')">2 piecer</button>
+        <button class="btnOP" onclick="pc4Click('3Pcr')">3 piecer</button>
+        <button class="btnOP" onclick="pc4Click('4Pcr')">4 piecer</button>
+        <button class="btnOP" onclick="pc4Click('Sharwama')">Shawa</button>
+        <button class="btnOP" onclick="pc4Click('C/Mayaya')">C/Mayaya</button>
+        <button class="btn" onclick="pc4Click('Schips')">Small Chips</button>
+        <button class="btn" onclick="pc4Click('Lchips')">Large Chips</button>
+        <button class="btn" onclick="pc4Click('B/bgr')">Beef Burger</button>
+        <button class="btnOP" onclick="pc4Click('C/bgr')">C/Burger</button>
+        <button class="btn" onclick="pc4Click('Bottle')">Bottles</button>
+        <button class="btn1" onclick="pc4Click('M/maid')">M. Maid</button>
+        <button class="btn" onclick="pc4Click('Refresh')">Refresh</button>
+        <button class="btnOP" onclick="pc4Click('Mirinda')">Mirinda</button>
+        <button class="btn" onclick="pc4Click('Mwater')">Mineral Water</button>
+        <button class="btn" onclick="pc4Click('1/4grill')">1/4 Grill</button>
+        <button class="btn"onclick="pc4Click('PBag')">Plastic Bag</button>
+        <button class="btn" onclick="pc4Click('Petty')">UBC Petty</button>
+        <label style="color: red;">@FasoftTech_faraiMatsika2023</label>
+        </div>
+    </div>
+        </div>
+        <script>
+           function pc4Click(idea){
+            if(idea == 'bond'){
+                temp2 = parseInt(document.getElementById(idea).innerHTML)+50;
+                document.getElementById(idea).innerHTML = temp2;
+            }
+            else{
+            temp2 = parseInt(document.getElementById(idea).innerHTML)+1;
+            document.getElementById(idea).innerHTML = temp2;
+            }
+            
+            }
+        </script>
+        <style>
+            body{
+                background-image: url(tafecs.ico.jpg);
+            }
+             .myCalculator{
+    width: 90vw;
+    height: 50vh;
+    background: black;
+    display:inline-block;
+    margin: 50px;
+    border-radius: 10px;
+    align-self: center;
+ }
+ .myCalculator2{
+   width: 26vw;
+   height: 80vh;
+   background-color: black;
+   margin: 50px;
+   border-radius: 10px;
+ }
+ .btnOP{
+    width: 90px;
+    height: 90px;
+    border-radius: 60%;
+    font-size: larger;
+    background-color: red;
+    font-weight: bolder;
+    
+ }
+ .btnOP:hover{
+    background-color: antiquewhite;
+
+ }
+ .bt{
+    background-color: red;
+ }
+ .bt:hover{
+    background-color: red;
+    width: 120px;
+    height: 120px;
+ } 
+ .btn{
+    width: 90px;
+    height: 90px;
+    border-radius: 60%;
+    font-size: larger;
+ }
+ .btn1{
+    width: 90px;
+    height: 90px;
+    border-radius: 60%;
+    font-size: larger;
+ }
+ .btn:hover{
+    background-color: red;
+    width: 120px;
+    height: 120px;
+ }
+ .btn1:hover{
+    background-color: red;
+ }
+        </style>
+    </body>
+</html>
