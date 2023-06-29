@@ -58,7 +58,7 @@
         <button class="btn" onclick="pc4Click('usdDec')">+0.5</button>
         <button class="btn" onclick="pc4Click('Bottle')">Bottles</button>
         <button class="btn" onclick="pc4Click('1Pcr')">1 piecer</button>
-        <button class="btn" onclick="pc4Click('2Pcr')">2 piecer</button>
+        <button class="btnOP" onclick="pc4Click('2Pcr')">2 piecer</button>
         <button class="btnOP" onclick="pc4Click('3Pcr')">3 piecer</button>
         <button class="btnOP" onclick="pc4Click('4Pcr')">4 piecer</button>
         <button class="btnOP" onclick="pc4Click('Sharwama')">Shawa</button>
@@ -120,9 +120,9 @@
                 background-image: url(tafecs.ico.jpg);
             }
              .myCalculator{
-    width: 90vw;
-    height: 50vh;
-    background: black;
+    width: fit-content;
+    height: fit-content;
+    background: antiquewhite;
     display:inline-block;
     margin: 50px;
     border-radius: 10px;
@@ -142,6 +142,7 @@
     font-size: larger;
     background-color: red;
     font-weight: bolder;
+    transition: 2s;
     
  }
  .btnOP:hover{
@@ -150,19 +151,20 @@
  }
  .bt{
     background-color: red;
+    transition: 2s;
  }
  .bt:hover{
     background-color: red;
-    width: 120px;
-    height: 120px;
  } 
  .btn{
+    transition: 2s;
     width: 90px;
     height: 90px;
     border-radius: 60%;
     font-size: larger;
  }
  .btn1{
+    transition: 2s;
     width: 90px;
     height: 90px;
     border-radius: 60%;
@@ -170,14 +172,13 @@
  }
  .btn:hover{
     background-color: red;
-    width: 120px;
-    height: 120px;
  }
  .btn1:hover{
     background-color: red;
  }
  .Item1,.Item{
     transition: 2s;
+    background-color: antiquewhite;
  }
  .Item1:hover{
     background-color: red;
